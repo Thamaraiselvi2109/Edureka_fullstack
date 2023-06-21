@@ -1,0 +1,20 @@
+body{
+    background: linear-gradient(rgb(171, 10, 171),rgb(18, 155, 209));
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+    color: navy;
+}
+p{
+    text-align: justify;
+    padding: 39px;
+    line-height: 2;
+}
+#one{
+    border: 2px solid black;
+}
+#two{
+    border: 2px dotted black;
+}
+#three{
+    border: 2px dashed black;
+}
