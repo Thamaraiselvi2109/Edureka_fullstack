@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment-4</title>
+    <style>
+        h1{
+            color: aqua;
+            font-size: 100px;
+            text-shadow: 3px 3px 5px red;
+            text-align: center;
+        }
+        div{
+            display: flex;
+        }
+        #fig1{
+            transform: rotateY(30deg);
+        }
+        #fig2{
+            transform: rotateY(180deg);
+        }
+    </style>
+</head>
+<body>
+    <h1>3D Transforms</h1>
+    <div>
+        <figure>
+            <img src="image.jpeg" width="300px" height="400px"><br><br>
+            <figcaption>ORIGINAL</figcaption>
+        </figure>
+        <figure>
+            <img id="fig1" src="image.jpeg" width="300px" height="400px"><br><br>
+            <figcaption>rotate y(30)</figcaption>
+        </figure>
+        <figure>
+            <img id="fig2" src="image.jpeg" width="300px" height="400px"><br><br>
+            <figcaption>rotate y(180)</figcaption>
+        </figure>
+    </div>
+</body>
+</html>

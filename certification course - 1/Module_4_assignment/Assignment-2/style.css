@@ -1,0 +1,19 @@
+@font-face {
+    font-family: 'MoiraiOne';
+    src: url(fonts/MoiraiOne-Regular.ttf);
+}
+
+@font-face{
+    font-family: 'Comforter';
+    src: url(fonts/Comforter-Regular.ttf);
+}
+h1{
+    font-family: 'MoiraiOne';
+    font-size: 100px;
+    font-weight: bolder;
+}
+p{
+    font-family: 'Comforter';
+    font-size: xx-large;
+    font-weight: bolder;
+}
