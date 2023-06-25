@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment-4</title>
+    <style>
+        body{
+            text-align: center;
+        }
+        #output{
+            width:200px;
+            height:100px;
+            background: linear-gradient(to right, pink ,skyblue);
+        }
+    </style>
+</head>
+<body>
+    <button id="output">Click here</button>
+    <script>
+      var output=document.getElementById('output')
+      output.addEventListener('mouseover',function(){
+        alert("you have moved the mouse on the button")
+      });
+    </script>
+</body>
+</html>

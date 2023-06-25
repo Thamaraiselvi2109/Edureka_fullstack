@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment-3</title>
+    <style>
+        h1{
+            text-align: center;
+            color: rgb(0, 133, 235);
+            text-shadow: 5px 5px 5px rgb(160, 3, 3);
+        }
+        #one{
+            display: flex;
+            justify-content: center;
+        }
+        #largest{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 500px;
+            height: 100px;
+            background-color: aqua;
+            border-radius: 50px;
+            border: 2px solid red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Find the largest of three using functions</h1>
+    <div id="one"><div id="largest"></div></div>
+    <script>
+        var a=prompt("enter the first number: ")
+        var b=prompt("enter the second number: ")
+        var c=prompt("enter the third number: ")
+        function largest(x, y, z) {
+            if((x>y)&(x>z)){
+                var lar=document.getElementById('largest')
+                lar.innerHTML="The largest among three number is "+ x;
+            }
+            else if((y>z)&(y>x)){
+                var lar=document.getElementById('largest')
+                lar.innerHTML="The largest among three number is "+ y;
+            }
+            else{
+                var lar=document.getElementById('largest')
+                lar.innerHTML="The largest among three number is "+ z;}
+        }
+        largest(a,b,c)
+    </script>
+</body>
+</html>
