@@ -1,0 +1,26 @@
+h1{
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.row{
+    column-gap: 5px;
+}
+.col{
+    text-align: center;
+    border:3px solid black;
+    width: max-content;
+    height: 100px;
+    padding-top: 15px;
+}
+#google{
+    color: red;
+    font-size: 50px;
+}
+#facebook{
+    color: blue;
+    font-size: 50px;
+}
+#linkedin{
+    color: darkblue;
+    font-size: 50px
+}
