@@ -1,0 +1,52 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="bootstrap-tour/build/css/bootstrap-tour.min.css">
+    <title>Bootstrap tour</title>
+    <style>
+        body{
+            text-align: center;
+            font-size: 50px;
+        }
+        img{
+            width: 500px;
+            height: 500px;
+            margin: 30px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Bootstrap tour</h1>
+    <div id="one">hai<br><img src="download.jpg"></div>
+    <div id="two">hello<br><img src="HelloLight_Mac.png"></div>
+    <button id="tour_btn" class="btn btn-primary">tour button</button>
+    <script src="jquery-3.7.0.min.js"></script>
+    <script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+    <script src="bootstrap-tour/build/js/bootstrap-tour.min.js"></script>
+
+    <script>
+       var tour = new Tour();
+        tour.addSteps([
+            {
+                element: "#one",
+                placement:'bottom',
+                title:'title',
+                content:"para"
+
+            },
+            {
+                element: "#two",
+                placement:'bottom',
+                title:'title',
+                content:"para"
+
+            }
+            ])
+         tour.init()
+         tour.start()
+    </script>
+</body>
+</html>
