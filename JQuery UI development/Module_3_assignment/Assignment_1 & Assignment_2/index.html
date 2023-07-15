@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="file/favicon.png" type="image/x-icon">
+  <link rel="stylesheet" href="file/bootstrap-4.6.2-dist/css/bootstrap.min.css">
+  <title>Module_3_assignment</title>
+  <style>
+    p {
+      text-decoration: underline;
+    }
+
+    h5 {
+      color: red;
+    }
+  </style>
+</head>
+
+<body>
+  <h1 class="text-center">Assignment</h1>
+  <hr>
+  <div class="container">
+    <h3>Lab excersice</h3>
+    <p>Form validation and password hint</p>
+    <div class="jumbotron">
+      <h2>Log in form</h2>
+      <div class="form-group">
+        <label for="name">First name</label>
+        <input type="text" name="name" id="name" class="form-control" placeholder="Enter first name"
+          aria-describedby="helpId">
+        <small id="helpIdFirstName"></small>
+      </div>
+      <div class="form-group">
+        <label for="lsname">Last name</label>
+        <input type="text" name="lsname" id="lsname" class="form-control" placeholder="Enter last name"
+          aria-describedby="helpId">
+        <small id="helpId"></small>
+      </div>
+      <div class="form-group">
+        <label for="pass">Password</label>
+        <input type="password" class="form-control" name="pass" id="pass" placeholder="Enter password">
+      </div>
+      <div class="form-group">
+        <label for="cnpass">Conform password</label>
+        <input type="password" class="form-control" name="cnpass" id="cnpass" placeholder="Re-enter password">
+        <small id="passHint"></small>
+      </div>
+      <button type="submit" id="submitBtn" class="btn btn-primary">Submit</button>
+
+    </div>
+  </div>
+  <script src="file/jquery-3.7.0.min.js"></script>
+  <script src="file/bootstrap-4.6.2-dist/js/bootstrap.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $('#submitBtn').on('click', function () {
+        if(($('#pass').val() && $('#cnpass').val()) == "" ){
+            $('#passHint').html("Please Enter Any Password").css('color', 'orange');
+        }else if($('#pass').val() == $('#cnpass').val() ) {
+            $('#passHint').html("You Entered correct Password").css('color', 'green');
+        }else{
+            $('#passHint').html("You Entered worng Password").css('color', 'red');
+          }
+      });
+    });
+  </script>
+</body>
+
+</html>
