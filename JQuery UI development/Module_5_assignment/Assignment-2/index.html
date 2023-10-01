@@ -1,0 +1,30 @@
+﻿<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Accordion-style Horizontal Slider Plugin Example</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+  <script type="text/javascript" src="js/accordion.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <h1>Accordion-style Horizontal Slider Plugin Example</h1>
+  <div id="demo">
+  </div></div>
+  <script type="text/javascript">
+    $.as({
+      id: "demo",
+      folder: "images",
+      images: ["yam_1.jpg", "yam_2.jpg", "yam_3.jpg", "yam_4.jpg", "yam_5.jpg"],
+      speed: 5000,
+      imgWidth: 700
+    });
+  </script>
+</body>
+
+</html>
